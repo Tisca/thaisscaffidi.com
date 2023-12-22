@@ -1,0 +1,26 @@
+/* @media screen and (min-width: 576px) {
+
+    article {
+        display: flex;
+        flex-direction: column; Display child elements in a row for larger screens
+    }
+} */
+
+@media screen and (min-width: 992px) {
+    section {
+       display: flex;
+       justify-content: space-between;
+    }
+    
+    article {
+        flex: 50%;
+        max-width: 50%;
+      }
+}
+
+@media screen and (min-width: 1400px) {
+    article {
+        flex: 30%;
+        max-width: 30%;
+      }
+}
