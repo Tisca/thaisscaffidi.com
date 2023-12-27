@@ -24,30 +24,35 @@ p {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
 }
-
+/* One-column layout
+Type scale 1.125 – Major Second */
 h1 {
-    font-size: 3.815rem;
+    font-size: 2.027rem;
     padding-bottom:1rem;
 }
 
 h2 {
-    font-size: 3.052rem;
+    font-size: 1.802rem;
 }
 
 h3 {
-    font-size: 2.441rem;
+    font-size: 1.602rem;
 }
 
 h4 {
-    font-size: 1.953rem;
+    font-size: 1.424rem;
 }
 
 h5 {
-    font-size: 1.563rem;
+    font-size: 1.266rem;
 }
 
 h6 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+}
+
+small {
+    font-size: 0.889rem;
 }
 
 /********** TRANSITION **********/
@@ -57,8 +62,7 @@ a, .btn {
 
 /********** HEADER **********/
 header {
-    margin: 0 auto;
-    max-width: 1080px;
+    margin: 0 1rem;
 }
 
 #header-nav {
@@ -70,7 +74,7 @@ header {
 
 #header-nav a {
     color: #000;
-    font-size: 1.953rem;
+    font-size: 1.424rem;
     font-weight: 300;
     text-decoration: none;
 }
@@ -95,6 +99,7 @@ header {
         "item4"
         "item5"
         "item6";
+    padding: 0 2rem 0 0;    
 }
 
 .article-index {
@@ -102,7 +107,7 @@ header {
     padding: 0 1rem 3rem 1rem;
 }
 
-#article-header {
+.article-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,4 +154,34 @@ figcaption {
 
 .black {
     background-color: #000000;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #710627;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-height: 7rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 0 1rem 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer small {
+    color: white;
+}
+
+.flex-center-vertically {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
