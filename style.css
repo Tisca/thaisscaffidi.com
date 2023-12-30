@@ -14,8 +14,17 @@ html {
     font-size: 16px;
 }
 
-p, h1, h2, h3, h4, h5, h6, figcaption {
+a, p, h1, h2, h3, h4, h5, h6, figcaption {
     font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: none;
+    color: #de0d92;
 }
 
 p {
@@ -58,25 +67,28 @@ a, .btn, img, .middle {
 
 /********** HEADER **********/
 header {
-    margin: 0 1rem;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
 }
 
 #header-h1 {
+    color: #000;
     margin-right: auto;
+    text-decoration: none;
 }
 
+/* #header-h1:hover {
+    color: #de0d92;
+}
 #header-nav a {
-    /* margin-left: auto; */
     color: #000;
     text-decoration: none;
 }
 
 #header-nav a:hover {
     color: #de0d92;
-}
+} */
 
 
 
@@ -98,6 +110,7 @@ header {
 .article {
     position: relative;
     width: 100%;
+    padding-top: 0.5rem;
 }
 
 img {
@@ -156,53 +169,58 @@ img {
     background-color: #000000;
 }
 
+
+/* PROJECT PAGES */
+
+.project {
+    padding: 0 2rem;
+}
+
 figcaption {
-    padding-bottom: 0.5rem;
+    padding-top: 1rem;
 }
 
-/* BUTTONS */
-button:hover {
-    transform: scale(1.01);
-  
-}
-.rose, .chocolate, .lipstick, .pink, .blue, .black {
-    border: none;
-    color: #ffffff;
-    height: 2.5rem;
-    padding: 0 1rem;
+.mySlides {
+    display: none;
 }
 
-.rose {
-    background-color: #e3868e;
+.caption p {
+    padding-top: 1rem;
 }
 
-.chocolate {
-    background-color: #710627;
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
 }
 
-.lipstick {
-    background-color: #9e1946;
+
+/* CHANGE PAGE */
+
+.change-page-container {
+    margin: 2rem;
+    padding-bottom: 3rem;
 }
 
-.pink {
-    background-color: #de0d92;
+.back {
+float: left;
+font-size: 2.074rem
 }
 
-.blue {
-    background-color: #4d6cfa;
+.next {
+    float: right;
+    font-size: 2.074rem
 }
 
-.black {
-    background-color: #000000;
-}
 
 /* FOOTER */
 
 footer {
     background-color: #710627;
-    text-align: center;
-    min-height: 7rem;
+    clear: both;
     margin: 0;
+    min-height: 7rem;
+    text-align: center;
 }
 
 footer a {
@@ -212,6 +230,7 @@ footer a {
 }
 
 footer a:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
 

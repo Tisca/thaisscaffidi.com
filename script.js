@@ -28,3 +28,7 @@ function showSlides(slides, slideIndex, cycle) {
         showSlides(slides, slideIndex, cycle)
     }, cycle);
 };
+
+/* SOURCE:
+https://stackoverflow.com/questions/58455922/how-do-you-get-multiple-automatic-slideshows-on-one-page
+*/

@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Thaïs Scaffidi</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/mediaqueries.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,600&display=swap" rel="stylesheet">
@@ -13,91 +13,94 @@
 </head>
 
 <body>
+    <a id="top"></a>
     <header>
-        <a id="top"></a>
         <div id="header-h1">
-            <h1>Portfolio</h1>
+            <a href="/index.html"><h1>Portfolio</h1></a>
             <p>Thaïs Scaffidi</p>
         </div>
         <nav id="header-nav">
-            <a href="about"><p>About</p></a>
+            <a href="about">About</a>
         </nav>
-
     </header>
 
+    <div class="project">
+        <h2>Druckvelo</h2>
+        <p>WordPress, Manual</p>
+    </div>   
+    
     <div class="container">
         <div class="item item1">
-            <h2>Druckvelo</h2>
-            <p>Screendesign</p>
             <div class="article">
                 <a href="">
-                    <img class="image" src="assets/druckvelo/druckvelo-00.jpg" alt="">
+                    <img class="image" src="/assets/druckvelo/druckvelo-01.jpg" alt="">
                     <div class="middle">
-                        <p class="text">View project</p>
+                        <a href="https://www.druckvelo.ch/" target="_blank">
+                            <p class="text">Visit website</p>
+                        </a>
                     </div>
                 </a>
-            </div>    
-        </div>   
+            </div>
+            <div class="caption">
+                <p>
+                    WordPress-Website mit Anpassungen in CSS und JSON.
+                    Basierend auf Layout in XD, das von Kollegin erstellt 
+                    und vom Kunden freigegeben wurde.
+                </p>
+            </div>
+        </div>  
         <div class="item item2">
-            <h2>Kineju</h2>
-            <p>Corporate Design, Webdesign</p>
-            <div class="article">
-                <a href="">
-                    <img class="image" src="assets/kineju/kineju-00.jpg" alt="">
-                    <div class="middle">
-                        <p class="text">View project</p>
-                    </div>
-                </a>
+            <div class="slideshow-container" data-cycle="3000">
+                <div class="mySlides">
+                    <img src="/assets/druckvelo/druckvelo-s04.jpg" alt="">     
+                </div>
+                <div class="mySlides">
+                    <img src="/assets/druckvelo/druckvelo-s20.jpg" alt="">
+                </div>
             </div>
-        </div>   
+            <div class="caption">
+                <p>
+                    PDF mit interaktivem Inhaltsverzeichnis als Manual für den 
+                    Kunden. Überblick über das Backend und Anleitungen für
+                    einfache Änderungen, die der Kunde selber vornehmen kann.
+                </p>
+            </div>
+        </div>
         <div class="item item3">
-            <h2>San Yoga</h2>
-            <p>Logodesign, Webdesign</p>
-            <div class="article">
-                <a href="">
-                    <img class="image" src="assets/san-yoga/san-yoga-00.jpg" alt="">
-                    <div class="middle">
-                        <p class="text">View project</p>
-                    </div>
-                </a>
+            <div class="slideshow-container" data-cycle="3000">
+                <div class="mySlides">
+                    <img src="/assets/druckvelo/druckvelo-s08.jpg" alt="">
+                </div>
+                <div class="mySlides">
+                    <img src="/assets/druckvelo/druckvelo-s09.jpg" alt="">
+                </div>
+                <div class="mySlides">
+                    <img src="/assets/druckvelo/druckvelo-s11.jpg" alt="">
+                </div>
+                <div class="mySlides">
+                    <img src="/assets/druckvelo/druckvelo-s12.jpg" alt="">
+                </div>
             </div>
-        </div>   
-        <div class="item item4">
-            <h2>Ostergame</h2>
-            <p>Screendesign</p>
-            <div class="article">
-                <a href="">
-                    <img class="image" src="assets/ostergame/ostergame-00.jpg" alt="">
-                    <div class="middle">
-                        <p class="text">View project</p>
-                    </div>
-                </a>
+            <div class="caption">
+                <p>
+                    Weitere Seiten aus dem Manual, hier mit Anleitung 
+                    für inhaltliche Anpassungen.
+                </p>
             </div>
-        </div>   
-        <div class="item item5">
-            <h2>Werktagebuch</h2>
-            <p>Graphic design, prepress</p>
-            <div class="article">
-                <a href="">
-                    <img class="image" src="assets/werktagebuch/werktagebuch-01.jpg" alt="">
-                    <div class="middle">
-                        <p class="text">View project</p>
-                    </div>                
-                </a>
-            </div>
-        </div>   
-        <div class="item item6">
-            <h2>Werktagebuch</h2>
-            <p>Graphic design, prepress</p>
-            <div class="article">
-                <a href="">
-                    <img class="image" src="assets/werktagebuch/werktagebuch-02.jpg" alt="">
-                    <div class="middle">
-                        <p class="text">View project</p>
-                    </div>                
-                </a>
-            </div>
-        </div>   
+        </div>
+    </div>
+
+    <div class="change-page-container">
+        <div class="back">
+            <a href="/index.html" target="_self">
+                &lt; Back
+            </a>
+        </div>
+        <div class="next">
+            <a href="/work-projects/kineju.html" target="_self">
+                Next &gt;
+            </a>
+        </div>
     </div>
 
     <footer class="flex-center-vertically">
