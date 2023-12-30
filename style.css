@@ -14,7 +14,7 @@ html {
     font-size: 16px;
 }
 
-a, p, h1, h2, h3, h4, h5, h6, figcaption {
+a, p, h1, h2, h3, h4, h5, h6, li, td, small {
     font-weight: 300;
 }
 
@@ -29,6 +29,7 @@ a:hover {
 
 p {
     color: #000000;
+    line-height: 1.5;
 }
 
 /* Type scale 1.200 – Minor Third */
@@ -144,28 +145,27 @@ img {
     border-radius: 1rem;
   }
 
-.item1 .text {
+.blue {
     background-color: #4d6cfa;
   }
 
-
-.item2 .text {
+.rose {
     background-color: #e3868e;
 }
 
-.item3 .text {
+.pink {
     background-color: #de0d92;
 }
 
-.item4 .text {
+.lipstick {
     background-color: #9e1946;
 }
 
-.item5 .text {
-    background-color: #000000;
+.chocolate {
+    background-color: #710627;
 }
 
-.item6 .text {
+.black {
     background-color: #000000;
 }
 
@@ -174,10 +174,6 @@ img {
 
 .project {
     padding: 0 2rem;
-}
-
-figcaption {
-    padding-top: 1rem;
 }
 
 .mySlides {
@@ -195,7 +191,7 @@ figcaption {
 }
 
 
-/* CHANGE PAGE */
+/* Change page container */
 
 .change-page-container {
     margin: 2rem;
@@ -210,6 +206,39 @@ font-size: 2.074rem
 .next {
     float: right;
     font-size: 2.074rem
+}
+
+/* ABOUT */
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0.15rem 0.3rem;
+}
+
+td {
+    font-size: small;
+    padding-right: 1rem;
+    width: 25%;
+    height: 1.8rem;
+}
+
+.rose {
+    background-color: #e3868e;
+}
+
+.blue {
+    background-color: #4d6cfa;
+}
+
+.lipstick {
+    background-color: #9e1946;
+}
+
+ul {
+    list-style-type: none;
 }
 
 
