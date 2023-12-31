@@ -1,8 +1,8 @@
 /* Find all slideshow containers */
 var slideshowContainers = document.getElementsByClassName("slideshow-container");
 /* For each container get starting variables */
-for(let s = 0; s < slideshowContainers.length; s++) {
-    /* Read the new data attribute */        
+for (let s = 0; s < slideshowContainers.length; s++) {
+    /* Read the new data attribute */
     var cycle = slideshowContainers[s].dataset.cycle;
     /* Find all the child nodes with class mySlides */
     var slides = slideshowContainers[s].querySelectorAll('.mySlides');
@@ -24,7 +24,7 @@ function showSlides(slides, slideIndex, cycle) {
     };
     slides[slideIndex - 1].style.display = "block";
     /* Calling same function, but with new parameters and cycle time */
-    setTimeout(function() {
+    setTimeout(function () {
         showSlides(slides, slideIndex, cycle)
     }, cycle);
 };

@@ -1,20 +1,30 @@
 /********** GENERAL **********/
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 body {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      background: url(./assets/noise.png);
-    }
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background: url(./assets/noise.png);
+}
 
 html {
     scroll-behavior: smooth;
     font-size: 16px;
 }
 
-a, p, h1, h2, h3, h4, h5, h6, li, td, small {
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+td,
+small {
     font-weight: 300;
 }
 
@@ -22,6 +32,7 @@ a {
     text-decoration: none;
     color: #000000;
 }
+
 a:hover {
     text-decoration: none;
     color: #de0d92;
@@ -62,7 +73,10 @@ small {
 }
 
 /********** TRANSITION **********/
-a, .btn, img, .middle {
+a,
+.btn,
+img,
+.middle {
     transition: all 300ms ease;
 }
 
@@ -105,7 +119,7 @@ header {
         "item4"
         "item5"
         "item6";
-    padding: 0 3rem 1rem 1rem;    
+    padding: 0 3rem 1rem 1rem;
 }
 
 .article {
@@ -129,25 +143,25 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
-  .article:hover .image {
+.article:hover .image {
     opacity: 0.75;
-  }
+}
 
-  .article:hover .middle {
+.article:hover .middle {
     opacity: 1;
-  }
-  
+}
+
 .text {
     color: white;
     padding: 2rem;
     border-radius: 1rem;
-  }
+}
 
 .blue {
     background-color: #4d6cfa;
-  }
+}
 
 .rose {
     background-color: #e3868e;
@@ -188,6 +202,7 @@ img {
 .slideshow-container {
     position: relative;
     margin: auto;
+    padding-top: 0.5rem;
 }
 
 
@@ -199,8 +214,8 @@ img {
 }
 
 .back {
-float: left;
-font-size: 2.074rem
+    float: left;
+    font-size: 2.074rem
 }
 
 .next {
