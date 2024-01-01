@@ -8,7 +8,7 @@
 @media (min-width: 792px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
             "item1 item3"
             "item2 item4"
             "item5 item6";
@@ -24,11 +24,11 @@
 @media (min-width: 1448px) {
     .container {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
             "item1 item3 item5"
             "item2 item4 item6";
     }
- 
+
     html {
         font-size: 23.04px;
     }
@@ -42,6 +42,14 @@
 }
 
 /* Item-specific styles */
-.item1 { grid-area: item1; }
-.item2 { grid-area: item2; }
-.item3 { grid-area: item3; }
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
