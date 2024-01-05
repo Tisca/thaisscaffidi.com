@@ -122,19 +122,19 @@ header {
         "item4"
         "item5"
         "item6";
-    padding: 0 3rem 1rem 1rem;
+    padding: 0 2rem;
 }
 
 .article {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     padding-top: 0.5rem;
 }
 
 img {
     opacity: 1;
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     backface-visibility: hidden;
 }
@@ -239,12 +239,12 @@ img {
 table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0.15rem 0.3rem;
+    border-spacing: 0.15rem 0.15rem;
 }
 
 td {
     font-size: small;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
     width: 25%;
     height: 1.8rem;
 }

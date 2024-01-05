@@ -1,7 +1,47 @@
 .container {
     display: grid;
     gap: 2rem;
+    max-width: 100%;
     box-sizing: border-box;
+}
+
+/* Styles for items */
+
+.item {
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+
+/* Item-specific styles */
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+.item6 {
+    grid-area: item6;
+}
+
+/* One-column layout */
+@media (max-width: 791px) {
+    html {
+        font-size: 0.833rem;
+    }
+
 }
 
 /* Two-column layout */
@@ -12,6 +52,30 @@
             "item1 item3"
             "item2 item4"
             "item5 item6";
+    }
+
+        /* Item-specific styles */
+    .item1 {
+        grid-area: item1;
+    }
+
+    .item2 {
+        grid-area: item2;
+    }
+
+    .item3 {
+        grid-area: item3;
+    }
+    .item4 {
+        grid-area: item4;
+    }
+
+    .item5 {
+        grid-area: item6;
+    }
+
+    .item6 {
+        grid-area: item5;
     }
 
     html {
@@ -29,27 +93,35 @@
             "item2 item4 item6";
     }
 
+    /* Item-specific styles */
+    .item1 {
+        grid-area: item1;
+    }
+
+    .item2 {
+        grid-area: item2;
+    }
+
+    .item3 {
+        grid-area: item3;
+    }
+    .item4 {
+        grid-area: item4;
+    }
+
+    .item5 {
+        grid-area: item5;
+    }
+
+    .item6 {
+        grid-area: item6;
+    }
+
     html {
         font-size: 23.04px;
     }
 }
 
 
-/* Styles for items */
-.item {
-    width: 100%;
-    padding: 1rem;
-}
 
-/* Item-specific styles */
-.item1 {
-    grid-area: item1;
-}
 
-.item2 {
-    grid-area: item2;
-}
-
-.item3 {
-    grid-area: item3;
-}
