@@ -6,6 +6,10 @@
 
 /* Two-column layout */
 @media (min-width: 792px) {
+    html {
+        font-size: 19.2px;
+    }
+
     .container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -14,22 +18,37 @@
             "item5 item6";
     }
 
-    html {
-        font-size: 19.2px;
+    .button {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
+
+    .article:hover .image {
+        opacity: 0.75;
+    }
+
+    .article:hover .button {
+        opacity: 1;
+    }
+
+    
 
 }
 
 /* Three-column layout */
 @media (min-width: 1448px) {
+    html {
+        font-size: 23.04px;
+    }
+
     .container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
             "item1 item2 item3";
-    }
-
-    html {
-        font-size: 23.04px;
     }
 }
 

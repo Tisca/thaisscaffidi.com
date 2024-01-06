@@ -37,12 +37,12 @@
 }
 
 /* One-column layout */
-@media (max-width: 791px) {
+/* @media (max-width: 791px) {
     html {
         font-size: 0.833rem;
     }
 
-}
+} */
 
 /* Two-column layout */
 @media (min-width: 792px) {
