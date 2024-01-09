@@ -136,7 +136,6 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-    backface-visibility: hidden;
 }
 
 .button {
@@ -196,6 +195,19 @@ img {
     padding-top: 1rem;
 }
 
+.screen-desktop {
+    padding: 2rem;
+    max-width: 100%;
+}
+
+.screen-desktop img {
+    margin: auto;
+}
+.screen-desktop p {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
 /* Slideshow container */
 .slideshow-container {
     position: relative;
